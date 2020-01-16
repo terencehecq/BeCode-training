@@ -1,0 +1,179 @@
+html{
+    background-image: url(../img/geo-bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    color :white;
+    font-family: 'Catamaran', sans-serif;
+}
+
+main{
+    position:relative;
+    display:flex;
+    background-color: rgba(0,0,0,0.7);
+    width:75%;
+    height:70vh;
+    margin:12vh auto;
+    padding:20px 0;
+    overflow:hidden;
+}
+
+
+/* ------- Animation contour ------- */
+
+main span:nth-child(1){
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:3px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), #016ae9);
+    animation: neon1 2s linear infinite;
+}
+@keyframes neon1{
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: translateX(100%)
+    }
+}
+
+main span:nth-child(2){
+    position:absolute;
+    top:0;
+    right:0;
+    width:3px;
+    height:100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #016ae9);
+    animation: neon2 2s linear 1s infinite;
+}
+@keyframes neon2{
+    0%{
+        transform: translateY(-100%)
+    }
+    100%{
+        transform: translateY(100%)
+    }
+}
+
+main span:nth-child(3){
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.2), #016ae9);
+    animation: neon3 2s linear infinite;
+}
+@keyframes neon3{
+    0%{
+        transform: translateX(100%)
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}
+
+main span:nth-child(4){
+    position:absolute;
+    top:0;
+    left:0;
+    width:3px;
+    height:100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), #016ae9);
+    animation: neon4 2s linear 1s infinite;
+}
+@keyframes neon4{
+    0%{
+        transform: translateY(100%)
+    }
+    100%{
+        transform: translateY(-100%)
+    }
+}
+
+
+
+/* ------- Fin animation contour ------- */
+
+
+
+
+
+section.infos{
+    width:40%;
+    text-align:center;
+    margin:20px 5px 20px 20px;
+    padding-right:20px;
+    border-right:1px solid rgba(255,255,255,0.8);
+}
+
+.infos img{
+    width:80%;
+    margin:auto;
+    border:4px solid rgba(255,255,255,0.8);
+    border-radius: 50%
+}
+
+h1{
+    font-size:2em;
+    margin:0;
+}
+
+h4{
+    font-weight:lighter;
+    font-style: italic;
+    margin:0;
+}
+
+.infos ul{
+    list-style:none;
+    padding:0;
+    line-height:2em;
+}
+
+.infos ul i{
+    color: #e98401;
+    font-size:1.2em;
+    margin-right:5px;
+}
+
+.infos a{
+    text-decoration: none;
+    color:white;
+}
+
+.infos a:hover{
+    color:#016ae9;
+}
+
+section.exp{
+    margin:20px 20px 20px 5px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.exp article{
+    display:flex;
+}
+
+.exp article img{
+    width:100px;
+    height:100px;
+    margin:30px 20px;
+    border-radius:50%;
+}
+
+h2{
+    font-size:2em;
+    margin:0;
+    margin-left:30px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+strong{
+    color:#e98401;
+    font-weight: lighter;
+}

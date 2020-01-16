@@ -1,0 +1,240 @@
+@import 'reset';
+
+// Variables & Styles :
+
+$white : rgba(255, 255, 255);
+
+$blue: #1e8bc2;
+$blue-hover: rgb(20, 76, 122);
+
+$orange: rgb(221, 143, 26);
+$orange-hover: rgb(243, 173, 22);
+
+$grey: rgb(51, 51, 51);
+
+
+%button{
+    padding:15px 25px;
+    color:white;
+    font-size:1.2em;
+    text-decoration:none;
+    border: 2px solid white;
+    border-radius:10px;
+}
+
+
+
+
+
+html{
+    color: $white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: $blue;
+}
+
+nav{
+    background-color: $grey;
+    padding:15px;
+    display:flex;
+
+    img{
+        height:18px;
+        margin:0 40px 0 0;
+    }
+
+    ul{
+        display:flex;
+        width:90%;
+        list-style: none;
+    }
+
+    a{
+        color : $white;
+        text-decoration: none;
+        padding:5px 10px;
+
+        &:hover{
+            color:$orange-hover;
+        }
+    }
+
+    .log{
+        flex-grow:1;
+        text-align:right;
+    }
+}
+
+header{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    text-align:center;
+    padding: 20px 0;
+    position:relative;
+    min-height:250px;
+
+    >img{
+        position: absolute;
+        width: 250px;
+        top:10px;
+        left:10%;
+    }
+
+    #turlu_logo{
+        font-weight: bold;
+        font-size: 3.5em;
+        filter: blur(7px);
+    }
+
+    h1{
+        font-weight: lighter;
+        font-size: 1.3em;
+        margin:20px 0 40px;
+    }
+}
+
+.button{
+    @extend %button;
+
+    &.button-orange{
+        background-color: $orange;
+        &:hover{background-color: $orange-hover;}
+    }
+    &.button-blue{
+        background-color: $blue;
+        &:hover{background-color: $blue-hover;}
+    }
+
+}
+
+
+aside{
+    position: fixed;
+    top:50%;
+    right:20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+
+    a{
+        position: relative;
+        top:15px;
+        left:19px;
+        color:$white;
+        font-size: 2em;
+    }
+
+    &:hover{
+        background-color: rgb(10,10,10,0.8);
+    }
+
+}
+
+
+.white{
+    color: $grey;
+    background-color: $white;
+    text-align: center;
+    padding:20px;
+    font-weight: 300;
+    font-size: 1.4em;
+    margin:0;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+#flex4{
+    display:flex;
+    padding:40px 0;
+    width: 80%;
+    margin:auto;
+
+    div{
+        margin:0 15px;
+    }
+
+    h3{
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 0.9em;
+    }
+}
+
+h2 a{
+    color:$blue;
+    font-weight: bold;
+    &:hover{ color:$orange-hover;}
+}
+
+.partenaires{
+    background-color: #eee;
+    padding: 50px 0;
+    text-align: center;
+    color:rgb(231, 87, 62);
+    font-size: 1.2em;
+    font-weight: bold;
+
+    i{
+        font-size: 2em;
+        position: relative;
+        top:5px;
+        right:10px;
+    }
+
+    p{display:inline}
+
+    >div{
+        display:flex;
+        width:70%;
+        margin: 0 auto 50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img{ width:15%;}
+}
+
+
+.links{
+    padding:12vh 0 20vh;
+}
+
+footer{
+    background-color: $grey;
+    display:flex;
+    font-size: 0.8em;
+    position: relative;
+
+    a{
+        color: $white;
+        text-decoration: none;
+        padding:3px;
+        &:hover{color:$orange-hover;}
+    }
+
+    ul{
+        display:flex;
+        align-items: center;
+        margin:auto;
+        list-style:none;
+        width:85%;
+    }
+
+    .copyright{
+        flex-grow:1;
+        text-align:right;
+    }
+}
+
+h2{
+    color:red;
+}

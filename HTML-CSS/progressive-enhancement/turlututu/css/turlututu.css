@@ -1,0 +1,227 @@
+html{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin:0;
+    background-color: #1e8bc2;
+}
+
+nav{
+    background-color: rgb(51, 51, 51);
+    padding:15px;
+    display:flex;
+}
+
+nav img{
+    height:18px;
+    margin:0 40px 0 0;
+}
+
+nav ul{
+    display:flex;
+    width:85%;
+    margin:0;
+    list-style:none;
+    position:relative;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    padding:5px 10px;
+}
+
+nav a.log{
+    position: absolute;
+    right:0;
+    top: -6px;
+}
+
+nav a:hover, footer a:hover, nav .log:hover{
+    color: rgb(221, 143, 26);
+}
+
+
+header{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    text-align:center;
+    padding: 20px 0;
+    position:relative;
+    min-height:250px;
+}
+
+header>img{
+    position:absolute;
+    width:250px;
+    top:10px;
+    left:10%;
+}
+
+#turlu_logo{
+    font-weight:bold;
+    font-size: 3.5em;
+    filter:blur(7px);
+}
+
+h1{
+    font-weight:lighter;
+    font-size: 1.3em;
+    margin:20px 0 40px;
+}
+
+.button{
+    padding:15px 25px;
+    color:white;
+    font-size:1.2em;
+    text-decoration:none;
+    border: 2px solid white;
+    border-radius:10px;
+}
+
+.button.button-orange{
+    background-color:  rgb(221, 143, 26);
+}
+
+.button.button-blue{
+    background-color: rgb(20, 76, 122);
+}
+
+.button-orange:hover{
+    background-color: rgb(243, 173, 22);
+    color:white;
+}
+
+.button-blue:hover{
+    background-color: rgb(26, 98, 156);
+}
+
+aside{
+    position:fixed;
+    top:50%;
+    right:20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius:50%;
+    width:70px;
+    height:70px;
+}
+
+aside a{
+    position:relative;
+    top:15px;
+    left:19px;
+    color:white;
+    font-size:2em;
+}
+
+aside:hover{
+    background-color: rgb(10,10,10,0.8);
+}
+
+.white{
+    color:rgb(51, 51, 51);
+    background-color: white;
+    text-align:center;
+    padding:20px;
+    font-weight: 300;
+    font-size:1.4em;
+    margin:0;
+}
+
+.white a{
+    text-decoration:none;
+}
+
+#flex4{
+    display:flex;
+    padding:40px 0;
+    width:80%;
+    margin:auto;
+}
+
+#flex4 div{
+    margin:0 15px;
+}
+
+h3{
+    font-weight:400;
+    font-size:1.5em;
+}
+
+#flex4 p{
+    font-size:0.9em;
+}
+
+h2 a{
+    color:#1e8bc2;
+    font-weight: bold;
+}
+
+h2 a:hover{
+    color:rgb(221, 143, 26);
+}
+
+.partenaires{
+    background-color:#eeeeee;
+    padding:50px 0;
+    text-align:center;
+    color:rgb(231, 87, 62);
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+.partenaires i{
+    font-size:2em;
+    position:relative;
+    top:5px;
+    right:10px;
+}
+
+.partenaires p{
+    display:inline;
+}
+
+.partenaires>div{
+    display:flex;
+    width:70%;
+    margin:0 auto 50px;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.partenaires img{
+    width:15%;
+}
+
+section.links{
+    text-align:center;
+    padding:12vh 0 20vh;
+}
+
+
+footer{
+    background-color: #000;
+    display:flex;
+    font-size:0.8em;
+    position:relative;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    padding:3px;
+}
+
+footer ul{
+    display:flex;
+    list-style: none;
+    width:65%;
+}
+
+footer p{
+    position:absolute;
+    right:15px;
+}

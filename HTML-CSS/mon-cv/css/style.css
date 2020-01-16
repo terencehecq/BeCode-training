@@ -1,0 +1,172 @@
+html, body{
+    margin:0;
+    padding:0 0 50px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    padding:4%;
+    background-color: rgb(28, 137, 187);
+}
+
+header img{
+    grid-column: 1/4;
+    width:90%;
+    max-width: 200px;
+    margin:auto;
+    border-radius:5px;
+    border: 4px solid white;
+}
+
+header .infos{
+    grid-column:4/8;
+    color:white;
+    padding:10px;
+}
+
+h1{
+    display:block;
+    font-size: 2.5em;
+    margin:0 auto;
+}
+
+.infos ul{
+    list-style:none;
+    padding: 0;
+    font-weight:bold;
+    font-size:1.2em;
+    line-height:2.5em;
+}
+
+.infos a{
+    text-decoration: none;
+    color:white;
+}
+
+.infos a:hover{
+    color:coral;
+}
+
+.infos i{
+    color: coral;
+    font-size:1.1em;
+}
+
+.infos .fa-mobile-alt{margin:0 10px 0 5px;}
+.infos .fa-envelope{margin-right:10px;}
+.infos .fa-check-square{margin-right: 10px;}
+.infos .fa-map-pin{margin:0 10px 0 5px;;}
+
+.postcode{margin-left:32px;line-height:1.2em;}
+
+header .about{
+    grid-column:8/13;
+    background-color: rgb(192, 192, 192);
+    padding:0 15px;
+    border-radius: 8px;
+    font-size:0.95em;
+    text-align: justify;
+    display:grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.about h2{
+    font-size:1.8em;
+    text-indent: 10px;
+}
+
+
+
+/* ------- Fin du header ------- */
+
+
+
+/* -------- Code commun à toute la page -------- */
+
+
+section{
+    margin:10px 20px;
+}
+
+section div{
+    padding:0 0 0 20px;
+    border-bottom:1px dashed lightgrey;
+}
+
+h3{
+    font-size:2em;
+    background-color: rgb(28, 137, 187);
+    padding:5px 15px;
+    color:white;
+    border-radius:7px;
+    border-bottom:4px solid coral;
+}
+
+.year{
+    color:coral;
+    font-size:1.2em;
+    margin:30px 0 5px;
+}
+
+.title{
+    font-weight: bold;
+    font-size:1.3em;
+    margin:5px 0;
+    display:inline-block;
+}
+
+.describe{
+    margin:10px;
+}
+
+
+/* ------ Fin code commun ------ */
+
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills{
+    grid-column: 1/2;
+    grid-row:2/3
+}
+
+.langues{
+    grid-column:2/3;
+    grid-row:2/3;
+}
+
+.skills h4, .langues h4{
+    display:inline-block;
+    width:48%;
+    line-height:2em;
+}
+
+.level{
+    display:inline-block;
+    width:48%;
+    color:coral;
+    font-style: italic;
+}
+
+.level strong{
+    color:rgb(28, 137, 187);
+}
+
+.exp{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.skills p, .langues p{
+    text-align:right;
+}
+
+main{
+    width:80%;
+    margin:auto;
+}

@@ -1,0 +1,137 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    max-width:90%;
+    margin:auto;
+    background: -webkit-linear-gradient(90deg, rgb(163, 246, 180), rgb(148, 191, 235));
+    background: linear-gradient(rgb(90deg, 163, 246, 180), rgb(148, 191, 235));
+    background-image: url(../img/sky.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+p{
+    color: #666;
+}
+
+a{
+    color: red;
+    text-decoration:none;
+}
+
+a:visited{
+    color:purple;
+}
+
+a:hover{
+    color:orange;
+}
+
+p q{
+    width:50%;
+    margin:80px auto;
+    display:block;
+    font-size:1.6em;
+    background-color: #ddd;
+    border-left:5px solid red;
+    padding:30px;
+    font-style: italic;
+}
+
+.villageois{
+    border-color: rgb(146, 26, 26);
+}
+
+.fermier{
+    border-color: rgb(115, 161, 46);
+}
+
+
+header em{
+    background-color: yellow;
+    padding:5px;
+}
+
+.bien, .mal{
+    text-transform: uppercase;
+}
+
+.mal{
+    color:rgb(211, 53, 53);
+}
+
+.bien{
+    color:rgb(50, 184, 50);
+}
+
+table,td,th{
+    border:1px solid black;
+    border-collapse:collapse;
+    padding:8px;
+    margin:auto;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:nth-child(odd){
+    background-color: #fff;
+}
+
+th{
+    background-color: #ccc;
+}
+
+ul li{
+    padding:10px;
+}
+
+ul li:first-child{
+    background-image: url(../img/good.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    width:39%;
+}
+
+ul li:nth-child(2){
+    background-image: url(../img/bad.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    width:41%;
+}
+
+ul li:nth-last-child(2){
+    background-image: url(../img/cat.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    width:44%;
+}
+
+p:first-of-type{
+    font-weight: bold;
+}
+
+img.image1{
+    float:left;
+    margin:10px;
+}
+
+img.image2{
+    float:left;
+    margin:10px;
+}
+
+img.image3{
+    float:left;
+    margin:10px;
+}

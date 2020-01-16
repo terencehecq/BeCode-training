@@ -1,0 +1,155 @@
+html{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    background: #ebebeb;
+}
+
+section{
+    background-color: #fff;
+    width:40%;
+    max-width:800px;
+    margin:30px auto;
+    padding:30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #7f858d;
+    font-weight:300;
+    box-shadow: 0 6px 4px #b3b3b3;
+}
+
+
+
+
+
+
+
+/* -------- Section Tim Berners Lee ------- */
+
+section.TBL{
+    text-align:center;
+}
+
+.TBL img{
+    border-radius:50%;
+    width:30%;
+    border:4px solid #ccc;
+}
+
+h1{
+    color:#dd5555;
+    font-family: 'Montserrat', sans-serif;
+    font-size:2em;
+    font-weight:700;
+}
+
+h2{
+    text-align:center;
+    font-size:1.6em;
+    font-weight:400;
+}
+
+p{
+    text-align:left;
+    font-size:1.1em;
+    margin-bottom:40px;
+}
+
+.TBL a{
+    color:white;
+    background-color: #d55;
+    padding:15px;
+    border-radius:5px;
+    text-decoration: none;
+    font-weight:400;
+    font-size:1.1em;
+    margin:20px;
+}
+
+.TBL a:hover{
+    background-color: rgb(252, 103, 103);
+    animation:hover-button 0.4s ease;
+}
+
+@keyframes hover-button{
+    0%{background-color: #d55;}
+    100%{background-color: rgb(252, 103, 103);}
+}
+
+strong{
+    font-weight:700;
+}
+
+
+
+
+
+
+/* ------- Section social -------- */
+
+section.social ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding:0;
+    width:80%;
+    margin:auto;
+}
+
+.social li a{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    text-decoration: none;
+    color: #ccc;
+    margin:50px 0;
+    font-size: 1.2em;
+}
+
+.social li i{
+    font-size: 3.5em;
+}
+
+.social p{margin:10px 0 0 0;}
+
+.social li a:hover{
+    color: #7f858d;
+    animation: hover-social 0.4s ease;
+}
+
+@keyframes hover-social{
+    0%{color:#ccc;}
+    100%{color: #7f858d;}
+}
+
+
+
+
+
+
+
+
+/* ------- Section movies ------- */
+
+.movies>div{
+    display:flex;
+    margin:20px auto;
+}
+
+.movies>div div{
+    width:85%;
+    margin-left:20px;
+}
+
+.movies img{
+    width:30%;
+    margin:20px 20px 20px 0;
+}
+
+h3{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.movies p{
+    font-size:1.2em;
+}

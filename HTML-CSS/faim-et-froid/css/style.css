@@ -1,0 +1,164 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    position:relative;
+    margin-top:100px;
+}
+
+nav{
+    background-color: rgb(196, 196, 196);
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    justify-content: space-around;
+    align-items: center;
+    height:70px;
+    margin:0 auto;
+    padding:0;
+    width:70%;
+}
+
+nav li{
+    width:13%;;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul a:hover{
+    text-decoration: inherit;
+    color:#6cc305;
+}
+
+
+h1, h2{
+    text-align:center;
+    font-weight: bold;
+    margin-top: 120px;
+    font-size: 2.5em;
+    font-family: 'Baloo', cursive;
+}
+
+h3{
+    font-family: 'Baloo', cursive;
+}
+
+
+.flex{
+    display:flex;
+    width:80%;
+    margin:70px auto;
+    justify-content: space-evenly;
+}
+
+.altern img{
+    order:1;
+}
+
+.flex>img, .flex>div{
+    margin:20px;
+    width:40%;
+}
+
+.flex-produits{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin:auto;
+    width:80%;
+}
+
+.flex-produits a{
+    width:15vw;
+    height:15vw;
+    margin:20px;
+    text-align:center;
+    text-decoration:none;
+    position:relative;
+}
+
+.flex-produits a p{
+    width:100%;
+    padding:5px 0;
+    margin:0;
+    background-color: rgb(252,252,252,0.6);
+    position:absolute;
+    bottom:0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#resto{background-image: url(../img/resto.jpg);opacity:0.7}
+#bebe{background-image: url(../img/bebe.jpg);opacity:0.7}
+#vetements{background-image: url(../img/vetements.jpg);opacity:0.7}
+#meubles{background-image: url(../img/meubles.jpg);opacity:0.7}
+#brocante{background-image: url(../img/brocante.jpg);opacity:0.7}
+#alimentaire{background-image: url(../img/epicerie.jpg);opacity:0.7}
+#hygiene{background-image: url(../img/hygiene.jpg);opacity:0.7}
+
+#produits a:hover{
+    opacity:1;
+}
+
+#contact{
+    width:60%;
+    margin:auto;
+}
+
+#contact form{
+    margin-top:70px;
+}
+
+form input, textarea, select{
+    width:100%;
+    resize: none;
+}
+
+form textarea{
+    height:200px;
+}
+
+form option{
+    margin:15px;
+}
+
+form p{
+    margin:20px 0 0 0;
+}
+
+#submit{
+    margin-top:10px;
+    width:30%;
+    float:right;
+}
+
+#submit:hover{
+    background-color: orange;
+}
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    background-color:rgb(196, 196, 196);
+    margin-top:100px;
+    padding:30px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer a{
+    text-decoration:none;
+    
+}
