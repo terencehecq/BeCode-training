@@ -1,0 +1,47 @@
+body{
+    background-color: #222;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:200px;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    border:3px solid white;
+    padding: 10px 30px;
+    margin:30px;
+}
+
+#btn1{
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+#btn1:hover{
+    background-color: white;
+    color:black;
+}
+
+
+#btn2{
+    transition: background-color 1s ease-in-out, color 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#btn2:hover{
+    background-color: white;
+    color:black;
+    transform: scale(1.5);
+}
+
+#btn3{
+    transition: background-color 1s ease-in-out, color 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#btn3:hover{
+    background-color: white;
+    color:black;
+    transform: translateX(100px);
+}
