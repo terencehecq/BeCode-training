@@ -1,0 +1,21 @@
+section{
+    width:60%;
+    margin:auto;
+    display:flex;
+}
+
+.hoverMe{
+    width:100px;
+    height:100px;
+    background-color: coral;
+    border-radius: 5px;
+    padding:5px;
+    margin:5px;
+    margin:auto;
+    text-align:center;
+    font-weight: bold;
+}
+
+.disappear{
+    visibility:hidden;
+}

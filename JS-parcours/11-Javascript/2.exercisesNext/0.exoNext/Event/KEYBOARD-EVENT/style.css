@@ -1,0 +1,45 @@
+#color{
+    width:80%;
+    height:30vh;
+    margin:auto;
+    background-color: transparent;
+    margin-bottom: 10vh;
+    border:2px solid black;
+}
+
+h2{
+    width:80%;
+    margin:30px auto 10px;
+}
+
+.arrows{
+    width:40%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrows div:nth-child(2){
+    display:flex;
+}
+
+#up, #down, #left, #right{
+    display:flex;
+    width:100px;
+    height:100px;
+    background-color: rgba(100,100,100,1);
+    margin:5px;
+    border-radius:5px;
+    align-content: center;
+    align-items:center;
+}
+
+.highlight{
+    opacity:0.6;
+}
+
+i{
+    margin:auto;
+    font-size: 3em;
+}
