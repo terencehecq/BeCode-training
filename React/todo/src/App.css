@@ -1,0 +1,104 @@
+/* General style */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex>div {
+  height: 70vh;
+  width: 40%;
+  background-color: rgb(248, 235, 194);
+  box-shadow: 3px 3px 10px rgba(100, 100, 100, 0.5);
+  padding: 15px;
+}
+
+.flex h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.flex li {
+  font-size: 1.2rem;
+}
+
+.flex>div ul {
+  list-style: none;
+}
+
+.flex>div button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+
+
+/* ----- To Do side ----- */
+
+.todo {
+  position: relative;
+}
+
+.flex .todo ul button:hover {
+  color: rgb(65, 170, 33)
+}
+
+.todo .add {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 100%;
+}
+
+.todo .add input {
+  width: 90%;
+  line-height: 1.5rem;
+  padding-left: 5px;
+  background-color: rgb(223, 210, 169);
+  border: none;
+}
+
+.todo .add button {
+  margin: 0;
+  width: 8%;
+  height: 1.5rem;
+  color: rgba(0, 0, 0, 0.397);
+  vertical-align: middle;
+}
+
+.todo .add button:hover {
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/* ----- Done side ----- */
+
+.flex .done ul button:hover {
+  color: rgb(194, 47, 47);
+}
+
+.flex .done li {
+  text-decoration: line-through;
+  color: gray
+}
